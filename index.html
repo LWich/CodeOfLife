@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Код Жизни | LifeFusion™</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- START: Навигация -->
+    <nav class="bg-sky-300 backdrop-blur-sm fixed w-full z-50 border-b">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-white">Code of Life</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#about" class="text-gray-500 hover:text-rose-300 transition duration-300">О методе</a>
+                        <a href="#benefits" class="text-gray-500 hover:text-rose-300 transition duration-300">Какие ответы вы получаете</a>
+                        <a href="#benefits" class="text-gray-500 hover:text-rose-300 transition duration-300">Тарифы</a>
+                        <a href="#stories" class="text-gray-500 hover:text-rose-300 transition duration-300">Живые истории</a>
+                        <div class="hidden md:flex items-center space-x-2 ml-4">
+                            <a href="en.html" class="text-gray-500 hover:text-rose-300 transition duration-300">EN</a>
+                            <span class="text-gray-500">|</span>
+                            <a href="index.html" class="text-gray-500 hover:text-rose-300 transition duration-300">RU</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:hidden flex">
+                    <div class="flex items-center space-x-2 ml-4 mr-5">
+                        <a href="en.html" class="text-gray-500 hover:text-rose-300 transition duration-300">EN</a>
+                        <span class="text-gray-500">|</span>
+                        <a href="index.html" class="text-gray-500 hover:text-rose-300 transition duration-300">RU</a>
+                    </div>
+                    <button class="mobile-menu-button p-2 rounded-md text-gray-700 hover:text-indigo-700 focus:outline-none">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 12H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3 6H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="mobile-menu hidden md:hidden fixed inset-0 bg-rose-400 z-40 w-full">
+                <div class="flex justify-end p-6 bg-rose-400/95">
+                    <button class="mobile-menu-close p-2 rounded-md text-gray-700 hover:text-rose-300">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="flex flex-col items-center justify-center space-y-8 w-full bg-rose-400/95">
+                        <a href="#about" class="text-2xl text-white hover:text-rose-100 transition duration-300">О методе</a>
+                        <a href="#benefits" class="text-2xl text-white hover:text-rose-100 transition duration-300">Какие ответы вы получаете</a>
+                        <a href="#benefits" class="text-2xl text-white hover:text-rose-100 transition duration-300">Тарифы</a>
+                        <a href="#stories" class="text-2xl text-white hover:text-rose-100 transition duration-300">Живые истории</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END: Навигация -->
+
+    <!-- START: О нас -->
+    <section class="bg-sky-200 min-h-screen flex items-center pt-16 content-overlay">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div>
+                <h1 class="text-4xl sm:text-4xl md:text-6xl lg:text-6xl font-bold text-white leading-tight mb-16 sm:text-5xl text-center">
+                    Формула твоей силы. Алгоритм ясности
+                </h1>
+                <p class="text-lg sm:text-xl text-gray-500 mb-8">
+                    Каждый человек приходит в этот мир со своим внутренним кодом — набором закономерностей, которые определяют, как он думает, чувствует, принимает решения и достигает цели
+                </p>
+                <p class="text-lg sm:text-xl text-gray-500 mb-8">
+                    Метод <span class="font-bold">LifeFusion™</span> помогает расшифровать этот код, соединяя логику чисел и психологию личности
+                </p>
+                <p class="text-lg sm:text-xl text-gray-500 mb-8">
+                    Мы не гадаем. Мы объясняем<br>Ты вводишь дату рождения — а система показывает твои врождённые сильные стороны, зону фокуса и путь развития. Простой шаг, который превращает неопределённость в стратегию
+                </p>
+                <p class="text-lg sm:text-xl text-gray-500 mb-8">
+                    Когда знаешь свой код — путь становится яснее<br>Узнай свой алгоритм силы и действуй осознанно
+                </p>
+                <div class="justify-center flex flex-col sm:flex-row gap-4">
+                    <a href="#" class="text-center bg-sky-500 hover:bg-sky-700 text-white px-8 py-4 rounded-full font-medium text-lg transition-all duration-300 shadow-lg shadow-sky-400 hover:shadow-sky-600 transform hover:scale-105">
+                        Пройти диагностику
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END: О нас -->
+
+    <!-- START: Тарифы -->
+    <section id="benefits" class="py-20 content-overlay relative">
+        <div class="absolute -bottom-20 -right-20 w-64 h-64 rounded-full bg-rose-100/20 blur-3xl z-0"></div>
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl sm:text-4xl md:text-5xl lg:text-5xl font-bold text-center mb-16">Почему важно быть с нами</h2>
+                    
+                <!-- START: Карта фокуса -->
+                <h3 id="product1" class="text-xl mb-6"><span class="font-bold text-sky-400">Карта Фокуса</span> — инструмент на основе метода LifeFusion™. Показывает, куда уходит внимание и энергия, какие внутренние паттерны мешают эффективности. Помогает вернуть ясность и действовать из состояния контроля, а не перегрузки.</h3>
+
+                <div class="mt-8">
+                    <blockquote class="text-2xl italic text-sky-300 border-l-4 border-sky-200 pl-6 py-2 mb-6">
+                        "Много задач, но нет ощущения результата. Сил всё меньше, а концентрация падает"
+                    </blockquote>
+                </div>
+        
+                <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-6 mb-16">
+                    <div class="bg-white/80 rounded-xl p-6 shadow-md backdrop-blur-sm border border-indigo-100 relative flex flex-col">
+                        <h3 class="text-xl font-bold mb-4 text-indigo-600">Тариф Free</h3>
+                        <ul class="space-y-3 text-sm text-gray-600">
+                            <li class="flex items-start">
+                                <span>• Краткий анализ фокуса и 1 персональный совет для восстановления концентрации</span>
+                            </li>
+                        </ul>
+                        <div class="mt-auto pt-4 border-t border-indigo-100">
+                            <a href="#" class="bg-indigo-100 hover:bg-indigo-200 text-indigo-700 px-4 py-2 rounded-lg text-sm font-medium transition inline-block">
+                                Попробовать бесплатно
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bg-white/80 rounded-xl p-6 shadow-md backdrop-blur-sm border border-rose-100 relative">
+                        <div class="absolute top-4 right-4 bg-rose-100 text-rose-600 text-xs font-bold px-2 py-1 rounded-full">
+                            POPULAR
+                        </div>
+                        <h3 class="text-xl font-bold mb-4 text-rose-400">Тариф Plus</h3>
+                        <ul class="space-y-3 text-sm text-gray-600">
+                            <li class="flex items-start">
+                                <span>• Полная карта фокуса по 4 слоям LifeFusion™ + рекомендации на 7 дней и динамика состояния</span>
+                            </li>
+                        </ul>
+                        <div class="mt-6 pt-4 border-t border-rose-100">
+                            <a href="#" class="bg-rose-400 hover:bg-rose-500 text-white px-4 py-2 rounded-lg text-sm font-medium transition inline-block">
+                                Выбрать Plus
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Карта фокуса -->
+
+                <!-- START: Траектория Развития -->
+                <h3 id="product2" class="text-xl mb-6"><span class="font-bold text-sky-400">Траектория Развития</span> — цифровой план роста, соединяющий данные вашей даты рождения и текущий жизненный контекст. Помогает выстроить приоритеты и пошагово двигаться к цели без суеты и распыления.</h3>
+
+                <div class="mt-8">
+                    <blockquote class="text-2xl italic text-sky-300 border-l-4 border-sky-200 pl-6 py-2 mb-6">
+                        "Не понимаю, куда двигаться дальше. Хочу ясности в карьере и жизни"
+                    </blockquote>
+                </div>
+        
+                <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-6 mb-16">
+                    <div class="bg-white/80 rounded-xl p-6 shadow-md backdrop-blur-sm border border-indigo-100 relative flex flex-col">
+                        <h3 class="text-xl font-bold mb-4 text-indigo-600">Тариф Free</h3>
+                        <ul class="space-y-3 text-sm text-gray-600">
+                            <li class="flex items-start">
+                                <span>• Краткий прогноз по жизненному циклу и 1 рекомендация на ближайшую неделю</span>
+                            </li>
+                        </ul>
+                        <div class="mt-auto pt-4 border-t border-indigo-100">
+                            <a href="#" class="bg-indigo-100 hover:bg-indigo-200 text-indigo-700 px-4 py-2 rounded-lg text-sm font-medium transition inline-block">
+                                Попробовать бесплатно
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bg-white/80 rounded-xl p-6 shadow-md backdrop-blur-sm border border-rose-100 relative">
+                        <div class="absolute top-4 right-4 bg-rose-100 text-rose-600 text-xs font-bold px-2 py-1 rounded-full">
+                            POPULAR
+                        </div>
+                        <h3 class="text-xl font-bold mb-4 text-rose-400">Тариф Plus</h3>
+                        <ul class="space-y-3 text-sm text-gray-600">
+                            <li class="flex items-start">
+                                <span>• Полная траектория по 4 слоям LifeFusion™ с приоритетами на 7/30/90 дней и системой контроля прогресса</span>
+                            </li>
+                        </ul>
+                        <div class="mt-6 pt-4 border-t border-rose-100">
+                            <a href="#" class="bg-rose-400 hover:bg-rose-500 text-white px-4 py-2 rounded-lg text-sm font-medium transition inline-block">
+                                Выбрать Plus
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Траектория Развития -->
+
+                <!-- START: Карта Ресурсов -->
+                <h3 id="product3" class="text-xl mb-6"><span class="font-bold text-sky-400">Карта Ресурсов</span> — анализ энергетического баланса. Показывает, что наполняет и что истощает вас в работе и жизни. Даёт рекомендации по восстановлению внутреннего ресурса и поддержанию устойчивости.</h3>
+
+                <div class="mt-8">
+                    <blockquote class="text-2xl italic text-sky-300 border-l-4 border-sky-200 pl-6 py-2 mb-6">
+                        "Чувствую усталость даже после отдыха. Не понимаю, откуда брать силы"
+                    </blockquote>
+                </div>
+        
+                <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-6 mb-16">
+                    <div class="bg-white/80 rounded-xl p-6 shadow-md backdrop-blur-sm border border-indigo-100 relative flex flex-col">
+                        <h3 class="text-xl font-bold mb-4 text-indigo-600">Тариф Free</h3>
+                        <ul class="space-y-3 text-sm text-gray-600">
+                            <li class="flex items-start">
+                                <span>• Базовый отчёт по ключевым источникам и утечкам энергии.</span>
+                            </li>
+                        </ul>
+                        <div class="mt-auto pt-4 border-t border-indigo-100">
+                            <a href="#" class="bg-indigo-100 hover:bg-indigo-200 text-indigo-700 px-4 py-2 rounded-lg text-sm font-medium transition inline-block">
+                                Попробовать бесплатно
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bg-white/80 rounded-xl p-6 shadow-md backdrop-blur-sm border border-rose-100 relative">
+                        <div class="absolute top-4 right-4 bg-rose-100 text-rose-600 text-xs font-bold px-2 py-1 rounded-full">
+                            POPULAR
+                        </div>
+                        <h3 class="text-xl font-bold mb-4 text-rose-400">Тариф Plus</h3>
+                        <ul class="space-y-3 text-sm text-gray-600">
+                            <li class="flex items-start">
+                                <span>• Полная карта ресурсов с балансом по сферам (тело, эмоции, цели) и 7-дневным планом восстановления</span>
+                            </li>
+                        </ul>
+                        <div class="mt-6 pt-4 border-t border-rose-100">
+                            <a href="#" class="bg-rose-400 hover:bg-rose-500 text-white px-4 py-2 rounded-lg text-sm font-medium transition inline-block">
+                                Выбрать Plus
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Карта Ресурсов -->
+
+                <!-- START: Профиль Силы -->
+                <h3 id="product4" class="text-xl mb-6"><span class="font-bold text-sky-400">Профиль Силы</span> — цифровой портрет врождённых компетенций. Помогает понять, как вы принимаете решения, где проявляется ваш потенциал и как действовать точнее.</h3>
+
+                <div class="mt-8">
+                    <blockquote class="text-2xl italic text-sky-300 border-l-4 border-sky-200 pl-6 py-2 mb-6">
+                        "Хочу понять, где моя сила и как использовать её в карьере или бизнесе"
+                    </blockquote>
+                </div>
+        
+                <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-6 mb-16">
+                    <div class="bg-white/80 rounded-xl p-6 shadow-md backdrop-blur-sm border border-indigo-100 relative flex flex-col">
+                        <h3 class="text-xl font-bold mb-4 text-indigo-600">Тариф Free</h3>
+                        <ul class="space-y-3 text-sm text-gray-600">
+                            <li class="flex items-start">
+                                <span>• Краткий профиль (3 ключевые компетенции)</span>
+                            </li>
+                        </ul>
+                        <div class="mt-auto pt-4 border-t border-indigo-100">
+                            <a href="#" class="bg-indigo-100 hover:bg-indigo-200 text-indigo-700 px-4 py-2 rounded-lg text-sm font-medium transition inline-block">
+                                Попробовать бесплатно
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bg-white/80 rounded-xl p-6 shadow-md backdrop-blur-sm border border-rose-100 relative">
+                        <div class="absolute top-4 right-4 bg-rose-100 text-rose-600 text-xs font-bold px-2 py-1 rounded-full">
+                            POPULAR
+                        </div>
+                        <h3 class="text-xl font-bold mb-4 text-rose-400">Тариф Plus</h3>
+                        <ul class="space-y-3 text-sm text-gray-600">
+                            <li class="flex items-start">
+                                <span>• Полная карта сильных и уязвимых сторон с рекомендациями по применению в работе и лидерстве</span>
+                            </li>
+                        </ul>
+                        <div class="mt-6 pt-4 border-t border-rose-100">
+                            <a href="#" class="bg-rose-400 hover:bg-rose-500 text-white px-4 py-2 rounded-lg text-sm font-medium transition inline-block">
+                                Выбрать Plus
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Профиль Силы -->
+            </div>
+        </div>
+    </section>
+    <!-- END: Тарифы -->
+
+    <!-- START: О методе -->
+    <section id="about" class="py-20 content-overlay bg-sky-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl sm:text-4xl md:text-5xl lg:text-5xl text-center text-white font-bold mb-16">
+                Цифры — язык, на котором говорит твоя индивидуальность
+            </h2>
+            <p class="text-xl text-gray-600 mb-8 mx-auto">
+                <span class="font-bold">LifeFusion™</span> — это интегративный современный метод самопознания, созданный для тех, кто хочет лучше понять себя и жить в согласии с внутренним ритмом. Он соединяет точность чисел и глубину человеческих чувств, чтобы показать: всё в нас подчинено своим закономерностям — нужно лишь научиться их слышать.
+            </p>
+            <p class="text-xl text-gray-600 mb-8 mx-auto">
+                Метод объединяет четыре слоя анализа:
+            </p>
+            <ul class="text-xl mb-8 text-gray-500 space-y-2">
+                <li>1. <span class="font-bold">Цифровой анализ</span> — раскрывает врождённые качества и естественный способ действовать</li>
+                <li>2. <span class="font-bold">Матрица Пифагора</span> — помогает увидеть сильные стороны и зоны, где требуется больше мягкости к себе</li>
+                <li>3. <span class="font-bold">Нумерология</span> — показывает жизненные циклы, периоды роста и восстановления</li>
+                <li>4. <span class="font-bold">Психософия</span> — объясняет, как вы принимаете решения и почему в одних ситуациях чувствуете лёгкость, а в других — сопротивление</li>
+            </ul>
+            <p class="text-xl text-gray-600 mb-8 mx-auto">
+                Когда эти уровни соединяются, рождается целостная карта личности — ясная, человечная, без мистики и оценок.
+            </p>
+            <p class="text-xl text-gray-600 mb-8 mx-auto">
+                <span class="font-bold">LifeFusion™</span> работает просто: достаточно ввести дату рождения, чтобы получить свой цифровой портрет и персональные рекомендации, которые обновляются в выбранном тарифе. Сервис помогает замечать закономерности, восстанавливать внутренний баланс, выстраивать отношения и понимать, куда двигаться дальше.
+            </p>
+            <p class="text-xl text-gray-600 mb-8 mx-auto">
+                Это не гадание и не теория — это живой инструмент для тех, кто хочет видеть себя честно и бережно. Цифры здесь становятся языком души: точным, спокойным и по-настоящему вашим.
+            </p>
+        </div>
+    </section>
+    <!-- END: О методе -->
+
+    <!-- START: Отзывы -->
+    <section id="stories" class="py-20 content-overlay">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl sm:text-4xl md:text-5xl lg:text-5xl font-bold text-center mb-16">Живые истории</h2>
+            <div class="grid md:grid-cols-3  gap-8">
+                <div class="bg-white/90 rounded-xl p-6 shadow-md backdrop-blur-sm hover:shadow-lg transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/200x200/1" alt="Анна" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-sky-400">Алина, 27 лет</h4>
+                            <p class="text-gray-500 text-sm">Дизайнер</p>
+                        </div>
+                    </div>
+                    <p class="text-sky-400 italic mb-4">
+                        "Бесплатный анализ дал мне один совет, который перевернул всё. Я перестала распыляться на мелочи и теперь действую гораздо осознаннее. Результат — делаю больше, а устаю меньше"
+                    </p>
+                    <div class="flex space-x-1">
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/200x200/2" alt="Михаил" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-sky-400">Максим, 34 года</h4>
+                            <p class="text-gray-500 text-sm">Менеджер проектов</p>
+                        </div>
+                    </div>
+                    <p class="text-sky-400 italic mb-4">
+                        "Карта Фокуса показала мне, куда на самом деле уходит моя энергия. Осознав это, я смог перестроить свой день и наконец выбраться из состояния постоянной перегруженности"
+                    </p>
+                    <div class="flex space-x-1">
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/200x200/3" alt="Елена" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-sky-400">Елена, 41 год</h4>
+                            <p class="text-gray-500 text-sm">Начальник отдела</p>
+                        </div>
+                    </div>
+                    <p class="text-sky-400 italic mb-4">
+                        "Краткий прогноз по жизненному циклу попал в точку. Он дал мне ясность, в какой фазе я нахожусь, и это понимание помогло принять важное карьерное решение без лишних сомнений"
+                    </p>
+                    <div class="flex space-x-1">
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                    </div>
+                </div>
+                <div class="bg-white/90 rounded-xl p-6 shadow-md backdrop-blur-sm hover:shadow-lg transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/200x200/4" alt="Дмитрий" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-sky-400">Дмитрий, 38 лет</h4>
+                            <p class="text-gray-500 text-sm">Архитектор</p>
+                        </div>
+                    </div>
+                    <p class="text-sky-400 italic mb-4">
+                        "Карта Ресурсов открыла мне глаза на главные причины моей хронической усталости. Следуя 7-дневному плану, я нашел новые источники энергии и научился их пополнять"
+                    </p>
+                    <div class="flex space-x-1">
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/200x200/5" alt="Ольга" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-sky-400">Ольга, 26 лет</h4>
+                            <p class="text-gray-500 text-sm">Маркетолог</p>
+                        </div>
+                    </div>
+                    <p class="text-sky-400 italic mb-4">
+                        "Я годами боролась с выгоранием. Полная карта показала разрыв между моими целями и энергетическим состоянием. Теперь я восстанавливаю силы не наугад, а по четкой системе"
+                    </p>
+                    <div class="flex space-x-1">
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/200x200/6" alt="Артем" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-sky-400">Артем, 29 лет</h4>
+                            <p class="text-gray-500 text-sm">Фрилансер</p>
+                        </div>
+                    </div>
+                    <p class="text-sky-400 italic mb-4">
+                        "Послание Дня стало моим утренним ритуалом. Эти небольшие подсказки помогают сохранять фокус и мотивацию."
+                    </p>
+                    <div class="flex space-x-1">
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                        <i data-feather="star" class="text-yellow-400 w-4 h-4"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END: Отзывы -->
+
+    <!-- START: CTA -->
+    <section class="py-20 bg-sky-200 flex items-center text-white content-overlay">
+        <div class="flex flex-col items-center  max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl text-white font-bold mb-8">Начни менять свою жизнь сегодня – узнай свой цифровой портрет</h2>
+
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="#" class="bg-sky-500 hover:bg-sky-700 text-white px-14 py-4 rounded-full font-medium text-lg transition-all duration-300 shadow-lg shadow-sky-400 hover:shadow-sky-600 transform hover:scale-105">
+                    Пройти диагностику
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- END: CTA -->
+
+    <!-- START: FOOTER -->
+     <footer class="bg-sky-400 text-gray-500 py-12 content-overlay backdrop-blur-sm relative">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-10">
+                <div>
+                    <h4 class="text-lg font-medium text-white mb-4">Навигация</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="hover:text-white transition">О методе</a></li>
+                        <li><a href="#benefits" class="hover:text-white transition">Какие ответы вы получаете</a></li>
+                        <li><a href="#benefits" class="hover:text-white transition">Тарифы</a></li>
+                        <li><a href="#stories" class="hover:text-white transition">Живые истории</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-medium text-white mb-4">Какие ответы вы получаете</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#product1" class="hover:text-white transition">Карта Фокуса</a></li>
+                        <li><a href="#product2" class="hover:text-white transition">Траектория Развития</a></li>
+                        <li><a href="#product3" class="hover:text-white transition">Карта Ресурсов</a></li>
+                        <li><a href="#product4" class="hover:text-white transition">Профиль Силы</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-medium text-white mb-4">Контакты</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <a href="mailto:info@digitalsoul.ru" class="hover:text-white transition">info@codeoflife.ru</a>
+                        </li>
+                        <li class="flex items-center">
+                            <a href="tel:+74951234567" class="hover:text-white transition">+7 (495) 123-45-67</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-sm text-center">
+                <p>© 2023 Code of Life. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- END: FOOTER -->
+
+    <script src="js/index.js"></script>
+</body>
+</html>
