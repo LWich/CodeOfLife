@@ -35,3 +35,27 @@ body {
 .mobile-menu {
     height: 100vh;
 }
+
+.header-bg {
+    background-color: #2975A7;
+}
+
+.block-bg {
+    background-color: #58BBDE;
+}
+
+.blue-text {
+    color: #58BBDE;
+}
+
+.white-text {
+    color: #DAE0E4;
+}
+
+.gray-text {
+    color: #CCC2B8;
+}
+
+.footer-bg {
+    background-color: #003664;
+}
